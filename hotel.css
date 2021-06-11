@@ -1,0 +1,100 @@
+a:hover {
+  color: wheat;
+}
+
+#body-font {
+  font-family: 'Times New Roman', Times, serif;
+  background-color: rgb(228, 236, 232);
+}
+
+.nav-color {
+  background-color: #af989861;
+  color: white;
+}
+
+.nav-font {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 5px 40px;
+  font-size: 20px;
+  display: flexbox;
+}
+
+.nav-left {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 0px 20px;
+  flex-wrap: wrap;
+  display: flexbox;
+}
+
+.logo-style {
+  padding: 0px 0px;
+}
+
+.form-edit {
+  /*display: block;*/
+  width: 211px;
+  padding: 10px 10px;
+  border: 1px solid rgb(231, 229, 229);
+  box-shadow: -2px 2px rgb(180, 178, 178);
+  margin: 30px 50px;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.inline {
+  margin: 0px 0px;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.s-left{
+  padding: 23px 45px;
+  margin: 8px 15px;
+  float: right;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.nav-flex{
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.c-img{
+  height: 600px;
+  max-width: 100%;
+}
+
+#c-mar{
+  margin: 10px 0px;
+}
+
+.c-flex{
+  display: flexbox;
+  flex-wrap: wrap;
+}
+
+#h2{ 
+  color: rgb(0, 0, 0);
+}
+
+.cards{
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn{
+  background-color: rgb(180, 178, 178);
+  border: 1px solid black;
+}
+
+.btn:hover{
+  background-color: rosybrown;
+  color: white;
+}
+.c-height{
+  justify-content: center;
+}

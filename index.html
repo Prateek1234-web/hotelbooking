@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hotels</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="hotel.css">
+    </style>
+</head>
+
+<body id="body-font">
+
+  <nav class="navbar navbar-expand-lg navbar-light nav-color nav-font">
+    <div class="container-fluid">
+      <div class="logo">
+        <a class="navbar-brand" href="index.html">
+          <img src="logo1.png" alt="" height="50px" width="50px">
+        </a>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="color: black;" aria-current="page" href="index.html">Hotels</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="color: black;" href="about.html">About</a>
+          </li>
+          </li>
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Search Hotels" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+      <div>
+        <a href="#" class="nav-left" data-bs-toggle="modal" data-bs-target="#exampleModal">Sign up</a>
+        <a href="#" class="nav-left" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Login</a>
+      </div>
+    </div>
+  </nav>
+  <div id="carouselExampleCaptions" class="carousel slide c-flex" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active c-img">
+        <img src="hotel-room 2.jpg" style="max-height: 100%; max-width: 100%;" class="d-block w-100" alt="Internet Connertion Unavailable">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 id="h2">Comfortable Rooms</h2>
+          <p id="h2">Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="carousel-item c-img">
+        <img src="hotel-chef.jpg" class="d-block w-100" alt="Internet Connertion Unavailable">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 id="h2">Amazing Chefs</h2>
+          <p id="h2">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="carousel-item c-img">
+        <img src="hotel-sights.jpg" class="d-block w-100" alt="Internet Connertion Unavailable">
+        <div class="carousel-caption d-none d-md-block">
+          <h2 id="h2">Wonderful Sights</h2>
+          <p id="h2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <div class="inline">
+    <div>
+      <select class="form-edit">
+        <option selected>State</option>
+        <option value="1">Andhra Pradesh</option>
+        <option value="2">Arunachal Pradesh</option>
+        <option value="3">Assam</option>
+        <option value="4">Bihar</option>
+        <option value="5">Chattiagarh</option>
+        <option value="6">Goa</option>
+        <option value="7">Gujarat</option>
+        <option value="8">Haryana</option>
+        <option value="9">Himachal Pradesh</option>
+        <option value="10">Jammu And Kashmir</option>
+        <option value="11">Jharkhand</option>
+        <option value="12">Karnataka</option>
+        <option value="13">Kerla</option>
+        <option value="14">Madya Pradesh</option>
+        <option value="15">Maharashtra</option>
+        <option value="16">Manipur</option>
+        <option value="17">Meghalaya</option>
+        <option value="18">Mizoram</option>
+        <option value="19">Nagaland</option>
+        <option value="20">Odisha</option>
+        <option value="21">Punjab</option>
+        <option value="22">Rajasthan</option>
+        <option value="23">sikkim</option>
+        <option value="24">Tamil Nadu</option>
+        <option value="25">Telangana</option>
+        <option value="26">Tripura</option>
+        <option value="27">Uttar Pradesh</option>
+        <option value="28">Uttrakhand</option>
+        <option value="29">West Bengal</option>
+      </select>
+    </div>
+    <div>
+      <select class="form-edit">
+        <option selected>Available Date</option>
+      </select>
+    </div>
+  </div>
+
+
+  <!--Cards-->
+<div class="c-height">
+  <div class="container my-4 cards">
+    <div class="card" style="width: 18rem;">
+      <img src="card 1.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">lorem</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, temporibus!</p>
+        <button class="btn">Book Now</button> 
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="card 2.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">lorem</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, temporibus!</p>
+        <button class="btn">Book Now</button> 
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="card 3.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">lorem</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, temporibus!</p>
+        <button class="btn">Book Now</button> 
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="card 4.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">lorem</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, temporibus!</p>
+        <button class="btn">Book Now</button> 
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="card 5.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">lorem</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, temporibus!</p>
+        <button class="btn">Book Now</button>     
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="card 6.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">lorem</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, temporibus!</p>
+        <button class="btn">Book Now</button> 
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="card 7.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">lorem</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, temporibus!</p>
+        <button class="btn">Book Now</button> 
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="card 8.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">lorem</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, temporibus!</p>
+        <button class="btn">Book Now</button> 
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="card 9.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">lorem</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, temporibus!</p>
+        <button class="btn">Book Now</button> 
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="card 10.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">lorem</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, temporibus!</p>
+        <button class="btn">Book Now</button> 
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="card 11.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">lorem</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, temporibus!</p>
+        <button class="btn">Book Now</button> 
+      </div>
+    </div>
+    <div class="card" style="width: 18rem;">
+      <img src="card 12.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">lorem</h5>
+        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, temporibus!</p>
+        <button class="btn">Book Now</button> 
+      </div>
+    </div>
+  </div>
+</div>
+  <!--PAGINATION-->
+  <nav class="container" aria-label="Page navigation example">
+    <ul class="pagination">
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Previous">
+          <span aria-hidden="true">&laquo;</span>
+        </a>
+      </li>
+      <li class="page-item"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item">
+        <a class="page-link" href="#" aria-label="Next">
+          <span aria-hidden="true">&raquo;</span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <hr>
+
+  <footer class="text-muted py-5">
+    <div class="container">
+      <p class="float-end mb-1">
+        <a href="#">Back to top</a>
+      </p>
+      <p class="mb-1">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Unde, ut.</p>
+      <p class="mb-0">Lorem, ipsum dolor.</p>
+    </div>
+  </footer>
+
+  <!--MODAL-->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Sign Up</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <div class="row g-3">
+            <div class="col">
+              <label for="name">First Name:</label>
+              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+            </div>
+            <div class="col">
+              <label for="lname">Last Name:</label>
+              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+            </div>
+          </div>
+          <form class="row g-3">
+            <div class="col-md-6">
+              <label for="inputEmail4" class="form-label">Email</label>
+              <input type="email" class="form-control" placeholder="Email" id="inputEmail4">
+            </div>
+            <div class="col-md-6">
+              <label for="inputPassword4" class="form-label">Password</label>
+              <input type="password" class="form-control" placeholder="Password" id="inputPassword4">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress" class="form-label">Address</label>
+              <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+            </div>
+            <div class="col-12">
+              <label for="inputAddress2" class="form-label">Address 2(optional)</label>
+              <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+            </div>
+            <div class="col-md-6">
+              <label for="inputCity" class="form-label">City</label>
+              <input type="text" class="form-control" id="inputCity">
+            </div>
+            <div class="col-md-4">
+              <label for="inputState" class="form-label">State</label>
+              <select id="inputState" class="form-select">
+        
+                  <option selected>State</option>
+                  <option value="1">Andhra Pradesh</option>
+                  <option value="2">Arunachal Pradesh</option>
+                  <option value="3">Assam</option>
+                  <option value="4">Bihar</option>
+                  <option value="5">Chattiagarh</option>
+                  <option value="6">Goa</option>
+                  <option value="7">Gujarat</option>
+                  <option value="8">Haryana</option>
+                  <option value="9">Himachal Pradesh</option>
+                  <option value="10">Jammu And Kashmir</option>
+                  <option value="11">Jharkhand</option>
+                  <option value="12">Karnataka</option>
+                  <option value="13">Kerla</option>
+                  <option value="14">Madya Pradesh</option>
+                  <option value="15">Maharashtra</option>
+                  <option value="16">Manipur</option>
+                  <option value="17">Meghalaya</option>
+                  <option value="18">Mizoram</option>
+                  <option value="19">Nagaland</option>
+                  <option value="20">Odisha</option>
+                  <option value="21">Punjab</option>
+                  <option value="22">Rajasthan</option>
+                  <option value="23">sikkim</option>
+                  <option value="24">Tamil Nadu</option>
+                  <option value="25">Telangana</option>
+                  <option value="26">Tripura</option>
+                  <option value="27">Uttar Pradesh</option>
+                  <option value="28">Uttrakhand</option>
+                  <option value="29">West Bengal</option>
+              </select>
+            </div>
+            <div class="col-md-2">
+              <label for="inputZip" class="form-label">Zip</label>
+              <input type="text" class="form-control" id="inputZip">
+            </div>
+            <div class="col-12">
+              <div class="form-check">
+                <input class="form-check-input" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  I accept terms & Conditions
+                </label>
+              </div>
+            </div>
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">Sign up</button>
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="row mb-3">
+              <label for="inputEmail3" class="col-sm-2 col-form-label">Email:</label>
+              <div class="col-sm-10">
+                <input type="email" class="form-control" id="inputEmail3">
+              </div>
+            </div>
+            <div class="row mb-3">
+              <label for="inputPassword3" class="col-sm-2 col-form-label">Password:</label>
+              <div class="col-sm-10">
+                <input type="password" class="form-control" id="inputPassword3">
+              </div>
+            </div>
+            <div>
+              <div class="col-auto">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" id="autoSizingCheck">
+                  <label class="form-check-label" for="autoSizingCheck">
+                    Remember me
+                  </label>
+                </div>
+            </div>
+            <div style="text-align: center;">
+              <a href="#" style="color: blue;">forgot password</a>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary">Login</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+</html>
